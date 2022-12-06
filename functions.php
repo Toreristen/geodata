@@ -2,12 +2,16 @@
 /**
  * Extra files & functions are hooked here.
  *
+ */
  
  function my_custom_menu() {
     register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
 }
 add_action( 'init', 'my_custom_menu' );
  
+/**
+ * Extra files & functions are hooked here.
+ *
  * Displays all of the head element and everything up until the "site-content" div.
  *
  * @package Avada
