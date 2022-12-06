@@ -3,7 +3,10 @@
  * Extra files & functions are hooked here.
  *
  
- *yo tore man yessir
+ function my_custom_menu() {
+    register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+}
+add_action( 'init', 'my_custom_menu' );
  
  * Displays all of the head element and everything up until the "site-content" div.
  *
